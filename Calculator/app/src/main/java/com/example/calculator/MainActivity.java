@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Введите число", Toast.LENGTH_SHORT).show();
             return 0;
         } else
-            return Integer.parseInt(editTe`xt.getText().toString());
+            return Integer.parseInt(editText.getText().toString());
     }
 
     @Override
