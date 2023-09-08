@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         editTextN1 = findViewById(R.id.number1);
         editTextN2 = findViewById(R.id.number2);
-        textView = findViewById(R.id.answer);
+        textView = findViewById(R.id.number2);
 
         buttonAdd.setOnClickListener(this);
         buttonSub.setOnClickListener(this);
@@ -60,7 +60,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 textView.setText("Ответ: " + Calculator.mul(num1, num2));
                 break;
             case R.id.btn_div:
-                textView.setText("Ответ: " + Calculator.div(num1, num2));
+                float result = Calculator.div(num1, num2);
+                if (result == -1) {
+                    textView.setText("Деление на ноль нельзя :(");
+                    break;
+                }
+                textView.setText("Ответ: " + result);
                 break;
         }
 

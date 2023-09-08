@@ -3,4 +3,8 @@
     <string name="Number">Введите число</string>
     <string name="second_number">Введите второе число</string>
     <string name="title">Простой калькулятор</string>
+    <string name="division">÷</string>
+    <string name="x">*</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
 </resources>
